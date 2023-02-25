@@ -99,6 +99,8 @@ cmp.setup.cmdline(':', {
     )
 })
 
+require('mason').setup {}
+
 -- lspconfig
 lspconfig = require('lspconfig')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -106,6 +108,10 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 lspconfig.html.setup {
     cmd = { "vscode-html-language-server", "--stdio" },
+    capabilities = capabilities
+}
+
+lspconfig.rust_analyzer.setup {
     capabilities = capabilities
 }
 
@@ -145,6 +151,7 @@ lspconfig.sqls.setup {
             connections = {}
         }
     },
+    capabilities = capabilities,
     on_attach = function(client, buffer)
         require('sqls').on_attach(client, buffer)
     end

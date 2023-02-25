@@ -31,15 +31,11 @@ return require('packer').startup(function()
         tag = 'release'
     }
 
-    -- git ui
-    use 'brneor/gitui.nvim'
-
     -- tree sitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/playground'
 
-    -- telescope
-    -- dependencies
+    -- telescope dependencies
     use 'nvim-lua/popup.nvim'
     -- telescope itself
     use 'nvim-telescope/telescope.nvim'
