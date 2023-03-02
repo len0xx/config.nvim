@@ -1,13 +1,12 @@
 vim.cmd.packadd('packer.nvim')
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
     -- general
     use 'nvim-lua/plenary.nvim'
     use 'wbthomason/packer.nvim'
     use 'AndrewRadev/splitjoin.vim'
     use 'jiangmiao/auto-pairs'
     use 'tpope/vim-surround'
-    use 'ruanyl/vim-gh-line'
     use 'nvim-lualine/lualine.nvim'
 
     -- tree-viewer
