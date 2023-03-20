@@ -5,6 +5,13 @@ require("plugins")
 require("nvim-tree").setup {
 	git = {
 		ignore = false
+	},
+	actions = {
+		open_file = {
+			window_picker = {
+				enable = false
+			}
+		}
 	}
 }
 -- Open the tree viewer on setup

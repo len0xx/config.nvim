@@ -6,4 +6,3 @@ vim.keymap.set('n', '<C-s>', builtin.live_grep, {})
 
 local opts = { noremap=true, silent=true }
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
-
