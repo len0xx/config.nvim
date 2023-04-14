@@ -36,13 +36,17 @@ lspconfig.html.setup {
 lspconfig.rust_analyzer.setup {
     capabilities = capabilities,
 	on_attach = on_attach,
-
 }
 
 lspconfig.cssls.setup {
     capabilities = capabilities,
 	on_attach = on_attach,
+}
 
+lspconfig.phpactor.setup {
+    capabilities = capabilities,
+	on_attach = on_attach,
+	root_dir = lspconfig.util.root_pattern("composer.json", ".git", "index.php")
 }
 
 lspconfig.lua_ls.setup {
@@ -65,7 +69,6 @@ lspconfig.lua_ls.setup {
 lspconfig.pyright.setup {
     capabilities = capabilities,
 	on_attach = on_attach,
-
 }
 
 lspconfig.tsserver.setup {

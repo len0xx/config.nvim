@@ -29,7 +29,7 @@ telescope.setup {
 
 --treesitter
 require('nvim-treesitter.configs').setup {
-    ensure_installed = { "vim", "lua", "javascript", "css", "rust", "html", "python", "typescript", "svelte", "vue" },
+    ensure_installed = { "php", "vim", "lua", "javascript", "css", "rust", "html", "python", "typescript", "svelte", "vue" },
     highlight = {
         enable = true,
     },
