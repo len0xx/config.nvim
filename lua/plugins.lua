@@ -50,6 +50,9 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lua'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/vim-vsnip'
+	use { 'glepnir/lspsaga.nvim', branch = 'main' }
+	use 'jose-elias-alvarez/typescript.nvim'
+	use 'onsails/lspkind.nvim'
 
     -- toggleterm
     use "akinsho/toggleterm.nvim"

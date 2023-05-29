@@ -21,12 +21,20 @@ cmp.setup {
     sources = cmp.config.sources(
         {
             { name = 'nvim_lsp' },
+			{ name = 'cmp-path' },
             { name = 'vsnip' } -- For vsnip users.
         },
         {
             { name = 'buffer' }
         }
-    )
+    ),
+	formatting = {
+		format = require("lspkind").cmp_format({
+			mode = 'symbol_text',
+			maxwidth = 50,
+			ellipsis_char = '...'
+		})
+	}
 }
 
   -- Set configuration for specific filetype.

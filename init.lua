@@ -14,8 +14,6 @@ require("nvim-tree").setup {
 		}
 	}
 }
--- Open the tree viewer on setup
-vim.cmd "NvimTreeToggle"
 
 --telescope
 local telescope = require('telescope')
@@ -29,7 +27,7 @@ telescope.setup {
 
 --treesitter
 require('nvim-treesitter.configs').setup {
-    ensure_installed = { "php", "vim", "lua", "javascript", "css", "rust", "html", "python", "typescript", "svelte", "vue" },
+    ensure_installed = { "php", "vim", "lua", "javascript", "css", "rust", "html", "python", "typescript", "tsx", "svelte", "vue", "prisma" },
     highlight = {
         enable = true,
     },
@@ -41,7 +39,10 @@ require('nvim-treesitter.configs').setup {
     },
     indent = {
         enable = true
-    }
+    },
+	autotag = {
+		enable = true
+	}
 }
 
 require('gitsigns').setup {}
@@ -66,6 +67,9 @@ require('lualine').setup {
         theme = 'auto'
     }
 }
+
+require("lspsaga").setup {}
+require("typescript").setup {}
 
 require("bufferline").setup {
     options = {

@@ -40,12 +40,17 @@ lspconfig.html.setup {
 
 lspconfig.rust_analyzer.setup {
 	capabilities = capabilities,
-	on_attach = on_attach,
+	on_attach = on_attach
 }
 
 lspconfig.cssls.setup {
 	capabilities = capabilities,
-	on_attach = on_attach,
+	on_attach = on_attach
+}
+
+lspconfig.prismals.setup {
+	capabilities = capabilities,
+	on_attach = on_attach
 }
 
 lspconfig.phpactor.setup {
@@ -104,8 +109,8 @@ lspconfig.volar.setup {
 	on_attach = on_attach,
 	init_options = {
 		typescript = {
-			tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"
-			-- tsdk = "/usr/local/lib/node_modules/typescript/lib"
+			-- tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"
+			tsdk = "/usr/lib/node_modules/typescript/lib"
 		}
 	}
 }
