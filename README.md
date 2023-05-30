@@ -6,9 +6,9 @@ My minimal and powerful NeoVim configuration
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/21990466/221374532-7527f6b5-20f2-4d39-8567-d470110793fd.png)
+![image](https://github.com/len0xx/config.nvim/assets/21990466/95871458-0401-4f3b-8662-90b20ba7e765)
 
-![image](https://user-images.githubusercontent.com/21990466/221374460-b2beb1e8-e669-44a8-8659-35f72f7b5503.png)
+![image](https://github.com/len0xx/config.nvim/assets/21990466/62537032-5c26-4744-a9e8-811731bb7916)
 
 ## Get started
 
@@ -16,13 +16,15 @@ My minimal and powerful NeoVim configuration
 
 **To use this config you first need to install NeoVim**. ([Installation guide](https://github.com/neovim/neovim/wiki/Installing-Neovim))
 
+I use NeoVim with [Tmux](https://github.com/tmux/tmux/wiki/Getting-Started) to enable the superpower of splitting terminals and managing the terminal windows with ease.
+
 Additionally you will need Packer and LazyGit. Both of which may be installed using the scripts from this repository (`install-config.sh` and `install-lazygit-linux-x86_64.sh`)
 
 Each Language Server Protocol (LSP for short) is using its own Language Server, so for each language you also need to install a Language Server Daemon. Check out [this guide](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) for more info
 
 NeoVim uses a lot of so called "nerd" characters, so you will most likely need those to be installed [from here](https://github.com/ryanoasis/nerd-fonts).
 
-The font that I use is `Fira Code`
+The font that I use is `Cascadia Code` (Download it [here](https://www.nerdfonts.com/))
 
 ### Installation (*nix)
 
@@ -56,10 +58,10 @@ chmod +x install-lazygit-linux-x86_64.sh
 - LuaLine [Statusline]
 - Nvim-Tree [Tree viewer]
 - Bufferline [Tabs]
-- ToggleTerm [Terminal windows inside neovim]
 
 ### LSP
 - Nvim-Lspconfig
+- LSPSaga
 - Mason
 - Mason-Lspconfig
 - Nvim-Cmp
@@ -73,8 +75,10 @@ chmod +x install-lazygit-linux-x86_64.sh
 
 ### Language support
 - TS [+ JS]
+- React
 - Svelte
 - Vue
+- Prisma
 - HTML, CSS
 - Rust
 - Vim
@@ -90,10 +94,10 @@ GitHub Dark Default [[Link](https://github.com/projekt0n/github-nvim-theme)]
 ### Keybindings
 - <Ctrl + S> - live search by file content [Normal mode]
 - <Ctrl + F> - search files by its name [Normal mode]
-- <Ctrl + G> - Git UI (lazygit) [Normal mode]
+- <Ctrl + G> - Git UI (`lazygit`) [Normal mode]
 - <Ctrl + R> - open the floating terminal window [Normal mode]
-- <Ctrl + R> + B - open the terminal window horizontally [Normal mode]
-- <Ctrl + R> + R - open the terminal window vertically [Normal mode]
+- <Ctrl + O> - go to the previous file [Normal mode]
+- <Ctrl + I> - go to the next file [Normal mode]
 - g + d - go to definition [Normal mode]
 - g + D - go to declaration [Normal mode]
 - K - hover [Normal mode]
