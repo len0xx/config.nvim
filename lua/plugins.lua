@@ -54,9 +54,6 @@ return require('packer').startup(function(use)
 	use 'jose-elias-alvarez/typescript.nvim'
 	use 'onsails/lspkind.nvim'
 
-    -- toggleterm
-    use "akinsho/toggleterm.nvim"
-
     -- themes
     use 'sainnhe/everforest'
     use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
