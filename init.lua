@@ -84,7 +84,9 @@ require("bufferline").setup {
         }
     }
 }
+require("toggleterm").setup {}
 
 require("remap")
+require("term")
 require("lsp")
 require("autocomplete")
