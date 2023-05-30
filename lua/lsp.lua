@@ -121,7 +121,7 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
 	}
 )
 
-lspconfig.sqls.setup {
+lspconfig.sqlls.setup {
 	settings = {
 		sqls = {
 			lowercaseKeywords = true,
