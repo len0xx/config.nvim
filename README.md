@@ -58,6 +58,7 @@ chmod +x install-lazygit-linux-x86_64.sh
 - LuaLine [Statusline]
 - Nvim-Tree [Tree viewer]
 - Bufferline [Tabs]
+- ToggleTerm [Terminal windows inside neovim]
 
 ### LSP
 - Nvim-Lspconfig
